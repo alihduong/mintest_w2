@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="number1" value="">
+<input type="number" id="number2" value="">
+<button id="bt" onclick="bt()"> Tính toán </button>
+<p id="result"></p>
+<script>
+    function bt(){
+        let so1 = parseInt(document.getElementById('number1').value);
+        let so2 = parseInt(document.getElementById('number2').value);
+        let result1 = so1**2;
+        let result2 = so1**so2;
+        document.getElementById('result').innerHTML = "a^2 = " +result1 + " ; a^b = " +result2;
+    }
+
+</script>
+</body>
+</html>
